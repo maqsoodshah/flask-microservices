@@ -50,3 +50,11 @@ echo "3.6.0" >> web/.python-version
 
 * Add a requirements.txt file with the required Python dependencies:
 #### **`File: web/requirements.txt`** 
+
+### Docker Compose
+---
+> **_NOTE:_**
+Docker Compose will be used to be define the connections between containers and their configuration settings.
+___
+* Create a docker-compose.yml file in the flask-microservice directory.
+#### **`File: docker-compose.yml`** 
