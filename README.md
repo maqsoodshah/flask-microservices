@@ -15,7 +15,7 @@ This guide is written for a non-root user.
 #### [Installing Docker Engine and Docker Compose on Ubuntu](https://www.linode.com/docs/guides/installing-and-using-docker-on-ubuntu-and-debian/)
 
 ### Prepare the Environment
-* Create a directory for the microservice:
+* Create a directory for the microservices:
 ```
 mkdir flask-microservices
 ```
@@ -30,3 +30,8 @@ cd flask-microservices
 
 * Create the nginx.conf referenced in the Dockerfile:
 #### **`File: /nginx/nginx.conf`**
+
+### PostgreSQL
+* The PostgreSQL image for this microservice will use the official postgresql image on Docker Hub, so no Dockerfile is necessary.
+
+In the postgres subdirectory, create an init.sql file.
