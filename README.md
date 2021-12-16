@@ -58,3 +58,21 @@ Docker Compose will be used to be define the connections between containers and 
 ___
 * Create a docker-compose.yml file in the flask-microservice directory.
 #### **`File: docker-compose.yml`** 
+
+### Test the Microservices
+* Use Docker Compose to build all of the images and start the microservices:
+```
+cd flask-microservice/ && docker-compose up
+```
+
+You should see all of the services start in your terminal.
+
+* Open a new terminal window and make a request to the example application:
+```python
+curl localhost
+```
+
+* Reset the page hit counter:
+```
+curl localhost/resetcounter
+```
