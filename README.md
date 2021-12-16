@@ -33,5 +33,15 @@ cd flask-microservices
 
 ### PostgreSQL
 * The PostgreSQL image for this microservice will use the official postgresql image on Docker Hub, so no Dockerfile is necessary.
+* In the postgres subdirectory, create an init.sql file.
+#### **`File: postgres/init.sql`**
 
-In the postgres subdirectory, create an init.sql file.
+### Web
+* The web image will hold an example Flask app. Add the following files to the web directory to prepare the app:
+* Create a .python-version file to specify the use of Python 3.6.
+
+```python
+echo "3.6.0" >> web/.python-version
+```
+* Create a Dockerfile for the web image.
+#### **`File: web/Dockerfile`**
