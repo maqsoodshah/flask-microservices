@@ -45,3 +45,8 @@ echo "3.6.0" >> web/.python-version
 ```
 * Create a Dockerfile for the web image.
 #### **`File: web/Dockerfile`**
+
+*Create #### **`File: web/app.py`** and add the example app script.
+
+* Add a requirements.txt file with the required Python dependencies:
+#### **`File: web/requirements.txt`** 
